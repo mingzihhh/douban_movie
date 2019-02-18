@@ -102,7 +102,7 @@ var top250 = {
         _this.$container.find('.loading').show()
         $.ajax({
             type: 'GET',
-            url: 'http://api.douban.com/v2/movie/top250',
+            url: 'https://api.douban.com/v2/movie/top250',
             data: {
                 start: _this.index,
                 count: _this.count
@@ -151,7 +151,7 @@ var Usbox = {
         _this.$container.find('.loading').show()
         $.ajax({
             type: 'GET',
-            url: 'http://api.douban.com/v2/movie/us_box',
+            url: 'https://api.douban.com/v2/movie/us_box',
             dataType: 'jsonp'
         }).done(function(ret){
             console.log(ret)
@@ -213,7 +213,7 @@ var Search = {
         this.$container.find('.loading').show()
         $.ajax({
             type: 'GET',
-            url: 'http://api.douban.com/v2/movie/search',
+            url: 'https://api.douban.com/v2/movie/search',
             data:{
                 q: _this.keyword,
                 count: _this.count,
